@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="script/jquery-3.1.1.js"></script>
+        <link rel="stylesheet" href="style/wmStyle.css">
+        <script src="script/layoutManager.js"></script>
+    </head>
+    <body id="wmDashboard">
+        <div class="allContainer">
+            <div id="wmTitle"></div>
+            <div id="wmHeadBar">
+                <div id="wmMainMenu" class="flexBlock">
+                    <div id="wmMainPriceMap" class="wmButton centerText paddingLarge" onclick="loadImage('default',0)">Price Changes</div>|
+                    <div id="wmDeptPriceData" class="wmButton centerText paddingLarge" onclick="getDepData()">By Department</div>|
+                    <div id="wmTrend" class="wmButton centerText paddingLarge" onclick="getTrend()">5 day trend</div>
+                </div>
+            </div>
+            <div class="padding-top-bottom">
+                <div class="summaryData">
+                    <div id="OverallMUP" class="width33">
+                        <div style="text-align: initial;">Mark Up: </div>
+                        <div class="bottomAlign flexBlock">
+                            <div class="amt">$34500231</div>
+                            <img src="images/up.svg">
+                        </div>
+                        <div class="bottomAlign flexBlock">
+                            <div>Customers Impacted:</div>
+                            <div class="cst">2343535</div>
+                        </div>
+                    </div>
+                    <div id="OverallMDN" class="width33">
+                        <div style="text-align: initial">Mark Down: </div>
+                        <div class=" bottomAlign flexBlock">
+                            <div class="amt">$90749950
+                            </div>
+                            <img src="images/down.svg" style="transform: rotate(180deg)">
+                        </div>
+                        <div class="bottomAlign flexBlock">
+                            <div>Customers Impacted:</div>
+                            <div class="cst">425321141</div>
+                        </div>
+                    </div>
+                    <div id="OverallDiff" class="width33">
+                        <div style="text-align: top">Total count of pending price changes</div>
+                        <div class="amt">352352322</div>
+                        <div class="bottomAlign flexBlock">                        
+                            <div>Store count:</div>
+                            <div class="cst">4652</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="outerBlock flexBlock">
+                <div class="activeBlock">
+                    <div id="mainContainer"></div>
+                    <div id="expandButton" onclick="expandView()">[ ]</div>
+                </div>
+                <div class="sideBlock lightText">
+                    <div id="dataGridBlock" class="dataGrid">
+                        <div class="flexBlock">
+                            <div  class="padding-left-right" id="mupGrid">
+                                <div class="flexBlock">
+                                    <div>Mark up</div>
+                                    <div class="padding-left-right" id="mupTD"></div>
+                                </div>
+                                <div class="flexBlock">
+                                    <div>Customers Impacted_</div>
+                                    <div class="" id="mupCustTD"></div>
+                                </div>
+                            </div>
+                            <div class="padding-left-right" id="mdnGrid">
+                                <div class="flexBlock">
+                                    <div>Mark Down</div>
+                                    <div class="padding-left-right" id="mdnTD"></div>
+                                </div>
+                                <div class="flexBlock">
+                                    <div>Customers Impacted_</div>
+                                    <div class="" id="mdnCustTD"></div>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div id="placeName"></div>
+                    </div>
+                    <div id ="depDataBlock" style="border: .1px solid grey; padding">
+                        <div style="text-align:center; position: relative; bottom: 0; padding-top:2%; font-weight:bold; color: grey">Data by Departments</div>
+                        <canvas id="deptCanvas" width="450px" height="350px"></canvas>
+                    </div>
+                    <canvas id="pieCanvas">asda</canvas>
+                    <canvas id="graphCanvas" height="400px" width="1350px">asda</canvas>
+                    <div id="legend" class="legend">  
+                            <span class="colorBlock redfill width33">Above $600000</span>
+                            <span class="colorBlock orangefill width33">Between $600000 to 120000</span>
+                            <span class="colorBlock greenfill width33">Below $120000</span>
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <script src="script/wmScript.js"></script>
+        <script src="script/dataGenerator.js"></script>
+        <script src="script/dataGenerator2.js"></script>
+        <script src="script/dataGenerator3.js"></script>
+        <script src="script/mapControlls.js"></script>
+        <script src="script/wmGraphs.js"></script>
+        <script src="script/canvasScript.js"></script>
+    </body>
+</html>
