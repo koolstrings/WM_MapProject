@@ -1,0 +1,301 @@
+body{
+    background-color: black;
+    overflow: hidden;
+}
+
+img{
+    z-index: 99;
+}
+
+svg{
+    top:5;
+}
+
+svg path{
+    fill:#aaaaaa;
+    fill-opacity:1;
+    stroke:#ffffff;
+    stroke-width:1.25;
+    stroke-miterlimit:4;
+    stroke-opacity:1;
+    stroke-dasharray:none
+}
+
+svg text{
+    font-size:21px;
+    font-style:normal;
+    font-variant:normal;
+    font-weight:normal;
+    font-stretch:normal;
+    line-height:125%;
+    letter-spacing:0px;
+    word-spacing:0px;
+    fill:#ffffff;
+    fill-opacity:1;
+    stroke:none;
+    font-family:Trebuchet MS, Helvetica, sans-serif;
+    -inkscape-font-specification:'Trebuchet MS, Helvetica, sans-serif'
+}
+
+canvas{
+    //border: .5px solid grey;
+    //background-color: dimgrey
+}
+
+#piCanvas{
+    width: 20em;
+    height: 10em;
+    overflow: hidden
+}
+
+#graphCanvas{
+    border: 1px solid grey;
+    overflow: hidden
+}
+
+#expandButton{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-family: monospace;
+    height: 3em
+    width: 3.5em;
+    box-shadow: 0 0 .5px .5px grey;
+    float: left;
+    margin: 3px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    position: relative;
+}
+
+#expandButton:hover{
+    cursor: pointer;
+}
+
+#mainContainer{
+        height:100%;
+        width: 100%
+    }
+
+
+.smallDataBlock{
+    text-align: center;
+    vertical-align: bottom
+}
+
+.allContainer{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#mapContainerObj{
+    float: right;
+}
+
+.outerBlock{
+    width: 100%
+}
+
+.activeBlock{
+    width: 64%
+}
+
+.sideBlock{
+    width: 36%
+}
+
+.flexBlock{
+    display: flex;
+}
+
+.centerText{
+    text-align: center
+}
+
+.paddingLarge{
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.wmButton{
+    //background-color: black;
+    font-family: 'Open Sans',Arial,sans-serif;
+    line-height: 1.5;
+    color: white;
+    font-size: .857rem;
+    padding-left:3px;
+    padding-right:3px;
+    margin-left: 2px;
+}
+
+.wmButton:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+
+.wmButton:active{
+    color: gray;
+}
+
+.lightText{
+    color: white
+}
+
+.dataBlock{
+    text-align: center;
+    height: 50% !important;
+}
+
+.dataGrid{
+    display: hidden !important;
+}
+
+.dataGrid{
+    color: white;
+    text-align: center;
+    padding: 1em;
+    border: 1px solid black
+}
+
+#mupGrid{    
+    width: 15em;
+    background-color: limegreen;
+    text-shadow: 2px 2px darkgreen;
+}
+
+#mdnGrid{    
+    width: 15em;
+    background-color: orangered;
+    text-shadow: 2px 2px darkred;
+}
+
+#placeName{
+    width: 100%;
+    background-color: brown;
+    font-family: sans-serif;
+    color: gold;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.5em
+}
+
+#depTable{
+    height: 100px;
+    overflow-y: scroll
+}
+
+.depTable th{
+    color: coral
+}
+
+.tblmarkUp{
+ color: greenyellow;
+}
+.tblcstMup{
+ color: greenyellow;    
+}
+.tblmarkDwn{
+    color: orangered
+}
+.tblcstMdn{    
+    color: orangered
+}
+.tblNameID{
+    text-align: left
+}
+
+.legend{
+    vertical-align: bottom;
+    align-self: center
+    display: flex;
+    font-size: 1em;
+    line-height: 25px;
+    padding-left: 5%;
+    bottom: 0;
+    position: fixed;
+}
+
+.colorBlock{    
+    font-size: 8px;
+    color: white;
+    padding: 2px;
+    border: 1px solid black
+}
+
+.redfill{
+    background-color: red;
+}
+
+.orangefill{
+    background-color: orange;
+}
+
+.greenfill{
+    background-color: green;
+}
+
+.width33{
+    max-width: 33%;
+    width: 33%
+}
+
+.summaryData{    
+    color: lightgray;
+    display: flex;    
+    padding: 1em;
+    vertical-align: text-bottom;
+    border: 1px solid grey;
+}
+
+#deptCanvas{
+    position: relative;
+    bottom: 0;
+}
+
+.amt{
+    font-size: 24px;
+    color: gold;
+}
+
+.bottomAlign{
+    vertical-align: bottom
+}
+
+.cst{
+    font-size: 20px;
+    font-family: monospace;
+    color: darkturquoise
+}
+
+.padding-top-bottom{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.padding-left-right{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#graphCanvas{
+    position: fixed;
+    display: none;
+}
+
+#pieCanvas{    
+    border:1px solid grey;
+    position: fixed;
+    display: none;
+    left:36.5%;
+    top: 26%
+}
+
+#wmMainMenu{
+    color: white;
+    background-color: darkslategray;
+    border: 5px dashed darkslategray
+}
